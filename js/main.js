@@ -200,7 +200,7 @@ mapScript.onload = function () {
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
             center: coords[0],
-            zoom: 16,
+            zoom: 14,
             controls: [],
         }, {
             searchControlProvider: 'yandex#search',

@@ -904,13 +904,14 @@ header .container{
 .maps__list{
     height: 600px;
     display: flex;
-    gap: 26px;
+    gap: 16px;
     margin-top: 40px;
 }
 .maps__addresses{
     height: 100%;
     overflow: auto;
     padding-right: 10px;
+
 }
 .address__item{
     margin-bottom: 15px;
@@ -1702,6 +1703,6 @@ header .container{
     margin-bottom: 110px;
 }
 .map{
-    width: calc(100% - 420px);
+    width: calc(100% - 456px);
     height: 600px;
 }
