@@ -200,7 +200,8 @@ mapScript.onload = function () {
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
             center: coords[0],
-            zoom: 14,
+            zoom: 12,
+            theme: "islands#dark",
             controls: [],
         }, {
             searchControlProvider: 'yandex#search',

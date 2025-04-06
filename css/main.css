@@ -898,13 +898,13 @@ header .container{
     margin-bottom: 0;
 }
 .contact__info{
-    margin-bottom: 110px;
+
     margin-top: 60px;
 }
 .maps__list{
     height: 600px;
     display: flex;
-    gap: 16px;
+    gap: 10px;
     margin-top: 40px;
 }
 .maps__addresses{
@@ -1705,4 +1705,11 @@ header .container{
 .map{
     width: calc(100% - 456px);
     height: 600px;
+}
+.ymaps-2-1-79-inner-panes {
+    -ms-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    filter: grayscale(1) grayscale(1) invert(85%);
 }
