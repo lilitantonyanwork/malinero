@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var mapScript = document.createElement('script');
 
-mapScript.setAttribute('src', 'https://api-maps.yandex.ru/2.1/?apikey=eef841e5-c60b-4c91-a933-d22090ea8fa7&lang=ru_RU');
+mapScript.setAttribute('src', 'https://api-maps.yandex.ru/2.1/?apikey=2d4d0fe9-daf7-4436-9003-b491bcabe3b8&lang=ru_RU');
 mapScript.onload = function () {
     let coords = [];
     document.querySelectorAll('.maps__addresses .address__item').forEach(btn => {
