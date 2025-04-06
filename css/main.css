@@ -1701,3 +1701,7 @@ header .container{
 .contact__map{
     margin-bottom: 110px;
 }
+.map{
+    width: calc(100% - 420px);
+    height: 600px;
+}
