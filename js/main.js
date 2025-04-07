@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchBtn = document.querySelector(".search__open");
     const search = document.querySelector(".search__form");
     const menu__btn = document.querySelector(".menu__btn");
+    const menu__btn1 = document.querySelector(".navbar .container .menu__btn");
     const menu__box  = document.querySelector(".menu__box ");
     const mainBlock  = document.querySelector("body ");
 
@@ -58,6 +59,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     menu__btn.addEventListener("click", () => {
+
+        if (menu__box.classList.contains('open')) {
+            mainBlock.classList.remove("no-scroll")
+            menu__box.classList.remove('open');
+        } else {
+            menu__box.classList.add("open");
+            mainBlock.classList.add("no-scroll")
+        }
+
+    });
+    menu__btn1.addEventListener("click", () => {
 
         if (menu__box.classList.contains('open')) {
             mainBlock.classList.remove("no-scroll")

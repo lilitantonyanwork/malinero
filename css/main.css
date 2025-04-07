@@ -131,6 +131,12 @@ header .container{
     left: 0;
     z-index: 1;
 }
+.menu__box .search__form{
+    display: none;
+}
+.menu__box  .navbar__logo{
+    display: none;
+}
 
 .menu__btn {
     display: flex;
