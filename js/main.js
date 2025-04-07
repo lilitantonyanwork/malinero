@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const search = document.querySelector(".search__form");
     const menu__btn = document.querySelector(".menu__btn");
     const menu__box  = document.querySelector(".menu__box ");
+    const mainBlock  = document.querySelector("body ");
 
 
     openButtons.forEach(button => {
@@ -59,9 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
     menu__btn.addEventListener("click", () => {
 
         if (menu__box.classList.contains('open')) {
+            mainBlock.classList.remove("no-scroll")
             menu__box.classList.remove('open');
         } else {
             menu__box.classList.add("open");
+            mainBlock.classList.add("no-scroll")
         }
 
     });
@@ -185,7 +188,9 @@ document.addEventListener("DOMContentLoaded", function() {
             this.parentNode.className = 'accordionItem open';
         }
     }
+    const map = document.getElementById('map')
 
+    if(map !== null){
     var mapScript = document.createElement('script');
 
 mapScript.setAttribute('src', 'https://api-maps.yandex.ru/2.1/?apikey=2d4d0fe9-daf7-4436-9003-b491bcabe3b8&lang=ru_RU');
@@ -254,4 +259,5 @@ mapScript.onload = function () {
     });
 };
 document.head.appendChild(mapScript);
+    }
 });

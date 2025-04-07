@@ -15,38 +15,53 @@
 <body>
   <header>
       <nav class="navbar">
+          <div class="hamburger-menu df a-center">
+              <input id="menu__toggle--mob" type="checkbox" />
+              <label class="menu__btn" for="menu__toggle--mob">
+                  <span></span>
+              </label>
+
+
+          </div>
           <div class="menu__box ">
-              <ul class="menu__box--block">
-                  <li>
-                      <a class="menu__item" href="#">Каталог мебели в наличии</a>
-                      <ul class="menu__box--sub">
-                          <li><a class="menu__item" href="#">Диваны</a></li>
-                          <li><a class="menu__item" href="#">Кровати</a></li>
-                          <li><a class="menu__item" href="#">Кресла</a></li>
-                          <li><a class="menu__item" href="#">Пуфы</a></li>
+              <a href="" class="navbar__logo">
+                  <img src="images/logo.svg" alt="logo">
+              </a>
+              <div class="menu__box--content">
 
-                      </ul>
-                  </li>
-                  <li>
-                      <a class="menu__item" href="#">Все коллекции</a>
-                      <ul class="menu__box--sub">
-                          <li><a class="menu__item" href="#">Victory Collection</a></li>
-                          <li><a class="menu__item" href="#">Estilo Collection</a></li>
-                          <li><a class="menu__item" href="#">Montblanc Collection</a></li>
-                          <li><a class="menu__item" href="#">Аксессуары</a></li>
+                  <form action="" class="search__form">
+                      <input type="text" name="search" id="search__mob" class="search__input" placeholder="Я хочу найти">
+                      <button class="search__btn btn"></button>
+                  </form>
+                  <ul class="menu__box--block">
+                      <li>
+                          <a class="menu__item" href="catalog.html">Каталог мебели в наличии</a>
+                          <ul class="menu__box--sub">
+                              <li><a class="menu__item" href="collections.html">Диваны</a></li>
+                              <li><a class="menu__item" href="#">Кровати</a></li>
+                              <li><a class="menu__item" href="#">Кресла</a></li>
+                              <li><a class="menu__item" href="#">Пуфы</a></li>
 
-                      </ul>
-                  </li>
-                  <li>
-                      <a class="menu__item" href="#">О компании</a>
-                  </li>
-                  <li>
-                      <a class="menu__item" href="#">Доставка</a>
-                  </li>
-              </ul>
+                          </ul>
+                      </li>
+                      <li>
+                          <a class="menu__item" href="#">Все коллекции</a>
+                          <ul class="menu__box--sub">
+                              <li><a class="menu__item" href="#">Victory Collection</a></li>
+                              <li><a class="menu__item" href="#">Estilo Collection</a></li>
+                              <li><a class="menu__item" href="#">Montblanc Collection</a></li>
+                              <li><a class="menu__item" href="#">Аксессуары</a></li>
 
-
-              <div class="contacts">
+                          </ul>
+                      </li>
+                      <li>
+                          <a class="menu__item" href="about.html">О компании</a>
+                      </li>
+                      <li>
+                          <a class="menu__item" href="delivery.html">Доставка</a>
+                      </li>
+                  </ul>
+                  <div class="contacts">
                   <h2 class="contacts__title">
                       Контакты
                   </h2>
@@ -60,6 +75,7 @@
                           <img src="images/whatsapp.svg" alt="whatsapp">
                       </a>
                   </div>
+              </div>
               </div>
 
           </div>
@@ -76,17 +92,17 @@
 
           <ul class="top-menu df a-center">
               <li class="top-menu__item">
-                  <a href="" class="top-menu__link">
+                  <a href="catalog.html" class="top-menu__link">
                       каталог
                   </a>
               </li>
               <li class="top-menu__item">
-                  <a href="" class="top-menu__link">
+                  <a href="about.html" class="top-menu__link">
                       о компании
                   </a>
               </li>
               <li class="top-menu__item">
-                  <a href="" class="top-menu__link">
+                  <a href="contacts.html" class="top-menu__link">
                       контакты
                   </a>
               </li>
@@ -134,7 +150,7 @@
       <div class="container">
           <ul class="mobile__navbar--list df a-center j-spc-btw">
               <li class="mobile__navbar--item">
-                  <a href="" class="mobile__navbar--link mobile__navbar--link-active">
+                  <a href="index.html" class="mobile__navbar--link mobile__navbar--link-active">
                       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M5 12.4538V23.0001H10V18.5001C10 16.5671 11.567 15.0001 13.5 15.0001C15.433 15.0001 17 16.5671 17 18.5001V23.0001H22V12.4538L18.354 9.26353L13.5 5.29211L8.64605 9.26353L5 12.4538ZM8 8.50005L12.8668 4.51816C13.2351 4.21677 13.7649 4.21677 14.1332 4.51816L19 8.50005L22.6585 11.7012C22.8755 11.8911 23 12.1655 23 12.4538V23.0001C23 23.5523 22.5523 24.0001 22 24.0001H17C16.4477 24.0001 16 23.5523 16 23.0001V18.5001C16 17.1193 14.8807 16.0001 13.5 16.0001C12.1193 16.0001 11 17.1193 11 18.5001V23.0001C11 23.5523 10.5523 24.0001 10 24.0001H5C4.44772 24.0001 4 23.5523 4 23.0001V12.4538C4 12.1655 4.12448 11.8911 4.3415 11.7012L8 8.50005Z" fill="white"/>
                       </svg>
@@ -142,7 +158,7 @@
                   </a>
               </li>
               <li class="mobile__navbar--item">
-                  <a href="" class="mobile__navbar--link ">
+                  <a href="about.html" class="mobile__navbar--link ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                           <path d="M22.5098 4V24H6.25977V21.5195H5.00977V20.2695H6.25977V17.7598H5.00977V16.5098H6.25977V11.5098H5.00977V10.2598H6.25977V7.75977H5.00977V6.50977H6.25977V4H22.5098ZM21.2598 5.25H7.50977V22.75H21.2598V5.25ZM20.0098 9H13.7598V7.75H20.0098V9ZM20.0098 11.5H13.7598V10.25H20.0098V11.5ZM10.6348 20.2109C10.3809 20.2109 10.1432 20.1654 9.92188 20.0742C9.70052 19.9831 9.50521 19.8529 9.33594 19.6836C9.16667 19.5143 9.03646 19.319 8.94531 19.0977C8.85417 18.8763 8.80534 18.6354 8.79883 18.375C8.79883 18.1211 8.8444 17.8835 8.93555 17.6621C9.02669 17.4408 9.1569 17.2487 9.32617 17.0859C9.49544 16.9232 9.69076 16.7897 9.91211 16.6855C10.1335 16.5814 10.3743 16.5326 10.6348 16.5391C10.8887 16.5391 11.1263 16.5879 11.3477 16.6855C11.569 16.7832 11.7611 16.9134 11.9238 17.0762C12.0866 17.2389 12.2201 17.4342 12.3242 17.6621C12.4284 17.89 12.4772 18.1276 12.4707 18.375C12.4707 18.6289 12.4219 18.8665 12.3242 19.0879C12.2266 19.3092 12.0964 19.5046 11.9336 19.6738C11.7708 19.8431 11.5755 19.9733 11.3477 20.0645C11.1198 20.1556 10.8822 20.2044 10.6348 20.2109ZM10.6348 17.7109C10.446 17.7109 10.2897 17.7728 10.166 17.8965C10.0423 18.0202 9.97721 18.1797 9.9707 18.375C9.9707 18.5638 10.0326 18.7201 10.1562 18.8438C10.2799 18.9674 10.4395 19.0326 10.6348 19.0391C10.8236 19.0391 10.9798 18.9772 11.1035 18.8535C11.2272 18.7298 11.2923 18.5703 11.2988 18.375C11.2988 18.1862 11.237 18.0299 11.1133 17.9062C10.9896 17.7826 10.8301 17.7174 10.6348 17.7109ZM10.6348 11.4609C10.3809 11.4609 10.1432 11.4154 9.92188 11.3242C9.70052 11.2331 9.50521 11.1029 9.33594 10.9336C9.16667 10.7643 9.03646 10.569 8.94531 10.3477C8.85417 10.1263 8.80534 9.88542 8.79883 9.625C8.79883 9.37109 8.8444 9.13346 8.93555 8.91211C9.02669 8.69076 9.1569 8.4987 9.32617 8.33594C9.49544 8.17318 9.69076 8.03971 9.91211 7.93555C10.1335 7.83138 10.3743 7.78255 10.6348 7.78906C10.8887 7.78906 11.1263 7.83789 11.3477 7.93555C11.569 8.0332 11.7611 8.16341 11.9238 8.32617C12.0866 8.48893 12.2201 8.68424 12.3242 8.91211C12.4284 9.13997 12.4772 9.3776 12.4707 9.625C12.4707 9.87891 12.4219 10.1165 12.3242 10.3379C12.2266 10.5592 12.0964 10.7546 11.9336 10.9238C11.7708 11.0931 11.5755 11.2233 11.3477 11.3145C11.1198 11.4056 10.8822 11.4544 10.6348 11.4609ZM10.6348 8.96094C10.446 8.96094 10.2897 9.02279 10.166 9.14648C10.0423 9.27018 9.97721 9.42969 9.9707 9.625C9.9707 9.8138 10.0326 9.97005 10.1562 10.0938C10.2799 10.2174 10.4395 10.2826 10.6348 10.2891C10.8236 10.2891 10.9798 10.2272 11.1035 10.1035C11.2272 9.97982 11.2923 9.82031 11.2988 9.625C11.2988 9.4362 11.237 9.27995 11.1133 9.15625C10.9896 9.03255 10.8301 8.96745 10.6348 8.96094ZM20.0098 17.75H13.7598V16.5H20.0098V17.75ZM20.0098 20.25H13.7598V19H20.0098V20.25Z" fill="white"/>
                       </svg>
@@ -150,7 +166,7 @@
                   </a>
               </li>
               <li class="mobile__navbar--item">
-                  <a href="" class="mobile__navbar--link ">
+                  <a href="catalog.html" class="mobile__navbar--link ">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="28" viewBox="0 0 29 28" fill="none">
                           <mask id="mask0_310_1440" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="5" width="19" height="18">
                               <rect width="18" height="18" transform="translate(6.48047 5)" fill="url(#pattern0_310_1440)"/>
@@ -169,7 +185,7 @@
                   </a>
               </li>
               <li class="mobile__navbar--item">
-                  <a href="" class="mobile__navbar--link ">
+                  <a href="contacts.html" class="mobile__navbar--link ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
                           <g clip-path="url(#clip0_310_1445)">
                               <path d="M14.7197 15.75C10.6856 15.75 7.2891 18.48 6.27697 22.1934C5.93809 23.4367 7.01442 24.5 8.30308 24.5H21.1364C22.4251 24.5 23.5014 23.4367 23.1625 22.1934C22.1504 18.48 18.7539 15.75 14.7197 15.75Z" stroke="white" stroke-width="1.25" stroke-linecap="round"/>
@@ -185,7 +201,7 @@
                   </a>
               </li>
               <li class="mobile__navbar--item">
-                  <a href="" class="mobile__navbar--link ">
+                  <a href="tel:" class="mobile__navbar--link ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
                           <path d="M11.083 4.68583L10.1509 4.96663C9.32095 5.21691 8.57978 5.69908 8.0146 6.35638C7.44943 7.01367 7.08378 7.81874 6.9607 8.67683C6.5746 11.3652 7.4378 14.5086 9.5191 18.1135C11.5952 21.7093 13.8806 24.0259 16.3961 25.0399C17.2043 25.3657 18.0891 25.4525 18.9453 25.29C19.8014 25.1275 20.5929 24.7226 21.2256 24.1234L21.9302 23.4552C22.3877 23.0222 22.6725 22.4378 22.7316 21.8106C22.7906 21.1834 22.62 20.5561 22.2513 20.0453L20.4885 17.6013C20.2502 17.2714 19.9146 17.0243 19.5287 16.8947C19.1429 16.765 18.7262 16.7594 18.337 16.8785L15.6707 17.6936L15.6018 17.7066C15.308 17.7495 14.6294 17.1138 13.7844 15.65C12.9004 14.1186 12.7184 13.2229 12.9615 12.9915L14.3174 11.7266C14.8127 11.2641 15.1511 10.6583 15.2851 9.99396C15.4192 9.32964 15.3422 8.64003 15.0649 8.02163L14.2043 6.10933C13.9455 5.53387 13.4863 5.07216 12.9123 4.81025C12.3382 4.54835 11.6872 4.50412 11.083 4.68583ZM13.0213 6.64233L13.8793 8.55463C14.0458 8.92554 14.0922 9.33922 14.012 9.73781C13.9319 10.1364 13.7291 10.5 13.4321 10.7776L12.0723 12.0438C11.2013 12.868 11.4899 14.2746 12.6599 16.3C13.7597 18.2058 14.7633 19.147 15.8423 18.9832L16.0035 18.9494L18.7179 18.1213C18.8477 18.0815 18.9866 18.0832 19.1153 18.1264C19.244 18.1695 19.356 18.2518 19.4355 18.3618L21.1983 20.8058C21.3829 21.0612 21.4684 21.375 21.439 21.6887C21.4096 22.0024 21.2672 22.2948 21.0384 22.5114L20.3325 23.1796C19.8806 23.6074 19.3153 23.8964 18.7039 24.0123C18.0926 24.1282 17.4608 24.0661 16.8836 23.8335C14.6762 22.9443 12.5897 20.8292 10.6462 17.4635C8.6975 14.09 7.9084 11.2209 8.2477 8.86143C8.33553 8.24839 8.59669 7.6732 9.00043 7.2036C9.40417 6.73399 9.93367 6.38951 10.5266 6.21073L11.4587 5.92993C11.7609 5.83912 12.0858 5.86133 12.3728 5.9924C12.6599 6.12348 12.8894 6.35448 13.0187 6.64233" fill="white"/>
                       </svg>
@@ -199,7 +215,7 @@
   <main>
       <section class="banner">
           <div class="container df j-center">
-              <a href="" class="btn btn__outline">Смотреть коллекцию</a>
+              <a href="collections.html" class="btn btn__outline">Смотреть коллекцию</a>
           </div>
       </section>
       <section class="collections">
@@ -272,7 +288,7 @@
               <div class="bestsellers__list df j-spc-btw    ">
 
                   <div class="bestseller__item card">
-                      <a href="">
+                      <a href="product.html">
                       <div class="card__img">
                       <img src="images/card5.png" alt="card5">
                       </div>
@@ -328,9 +344,9 @@
                 </div>
                 <div class="footer__col">
                     <div class="footer__menu df f-column">
-                        <a href="">Главная</a>
-                        <a href="">О компании</a>
-                        <a href="">Контакты</a>
+                        <a href="index.html">Главная</a>
+                        <a href="about.html">О компании</a>
+                        <a href="collections.html">Контакты</a>
                         <a href="">Сервис</a>
                     </div>
                 </div>

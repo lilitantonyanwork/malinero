@@ -123,6 +123,9 @@ header .container{
     top: 0;
     transform: rotate(90deg);
 }
+.navbar > .hamburger-menu{
+    display: none;
+}
 .menu__box.open {
     visibility: visible;
     left: 0;
@@ -189,6 +192,12 @@ header .container{
 .menu__box--block{
    width: 322px;
     margin-right: 118px ;
+}
+.menu__box--content{
+    overflow: auto;
+}
+.no-scroll{
+    overflow: hidden;
 }
 .menu__item {
     display: block;
