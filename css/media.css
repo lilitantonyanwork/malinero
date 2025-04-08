@@ -518,7 +518,7 @@
         display: none;
     }
     .banner{
-        height: 100vh;
+        height: calc(100vh - 79px);
     }
     .delivery{
         padding-bottom: 50px;

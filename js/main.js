@@ -25,13 +25,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const modal = document.getElementById("product-modal");
     const modalContact = document.getElementById("contact-modal");
+    const videoModal = document.getElementById("videoModal");
     const openButtons = document.querySelectorAll(".product__price--item");
     const openContactModal = document.querySelector(".btn__popup");
     const closeBtn = document.querySelectorAll(".btn__close");
     const city = document.querySelector(".cities__selected");
     const cityList = document.querySelector(".cities__list");
     const searchBtn = document.querySelector(".search__open");
-    const search = document.querySelector(".search__form");
+    const searchBtn1 = document.querySelector(".menu__box .search__open");
+    const search = document.querySelector(".navbar__contacts .search__form");
+    const search1 = document.querySelector(".menu__box .search__form");
     const menu__btn = document.querySelector(".menu__btn");
     const menu__btn1 = document.querySelector(".navbar .container .menu__btn");
     const menu__box  = document.querySelector(".menu__box ");
@@ -53,8 +56,17 @@ document.addEventListener("DOMContentLoaded", function() {
     if (searchBtn){
 
         searchBtn.addEventListener("click", () => {
+            console.log(search)
             search.style.display = "flex";
             searchBtn.style.display = "none"
+
+        });
+    }
+    if (searchBtn1){
+
+        searchBtn1.addEventListener("click", () => {
+            search1.style.display = "flex";
+            searchBtn1.style.display = "none"
 
         });
     }
@@ -81,14 +93,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
     city.addEventListener("click", () => {
-        cityList.style.display = "flex";
-        city.classList.add("open");
+        if (city.classList.contains('open')) {
+            cityList.style.display = "none";
+            city.classList.remove('open');
+        } else {
+            city.classList.add("open");
+            cityList.style.display = "flex";
+        }
 
     });
     closeBtn.forEach(button => {
+
         button.addEventListener("click", () => {
-            modalContact.style.display = "none";
-            modal.style.display = "none";
+            if (modalContact){
+                modalContact.style.display = "none";
+
+            }
+            if (modal){
+                modal.style.display = "none";
+
+            }
+            if(videoModal){
+                const video = document.querySelector('#videoContent video');
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+                videoModal.style.display = "none";
+            }
+
         });
     });
     // closeBtn.addEventListener("click", () => {
@@ -111,6 +144,15 @@ document.addEventListener("DOMContentLoaded", function() {
             cityList.style.display = "none";
             city.classList.remove("open");
 
+
+        }
+        if (event.target === videoModal ) {
+            const video = document.querySelector('#videoContent video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+            videoModal.style.display = "none";
 
         }
     });
@@ -259,7 +301,7 @@ mapScript.onload = function () {
 
                 // Move map
                 myMap.panTo(coords, {
-                    duration: 1000,
+                    duration: 2000,
                 });
             });
         });
@@ -272,4 +314,42 @@ mapScript.onload = function () {
 };
 document.head.appendChild(mapScript);
     }
+
+    //inputMask
+    let phoneInputs = document.querySelectorAll('.js-phone-mask');
+    phoneInputs.forEach(function (input) {
+        var maskOptions = {
+            mask: '+7 (999) 999-99-99',  // Здесь вы можете установить свою маску
+            greedy: false,
+            placeholder: '_',
+            showMaskOnHover: false,
+        };
+
+        Inputmask(maskOptions).mask(input);
+    });
+    document.querySelectorAll('.btn__play').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const videoSrc = this.dataset.src;
+
+            const videoModal = document.getElementById('videoModal');
+            const videoContent = document.getElementById('videoContent');
+
+            // Удаляем старое видео, если есть
+            const existingVideo = videoContent.querySelector('video');
+            if (existingVideo) {
+                existingVideo.remove();
+            }
+
+            // Создаем и добавляем новое видео
+            const video = document.createElement('video');
+            video.src = videoSrc;
+            video.controls = true;
+            video.autoplay = true;
+            video.style.maxWidth = '100%';
+            video.style.maxHeight = '100%';
+
+            videoContent.appendChild(video);
+            videoModal.style.display = 'flex';
+        });
+    });
 });

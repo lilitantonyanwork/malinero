@@ -79,7 +79,7 @@ ul{
 }
 .btn__outline:hover{
     color: #0A0A0A;
-    background: #fff;
+    background: #fff!important;
 }
 .container{
     max-width: 1296px;
@@ -264,6 +264,17 @@ header .container{
     text-transform: uppercase;
     color: #ffffff;
 }
+.top-menu__link:hover{
+    color: #99A3A3;
+}
+.menu__item:hover{
+    color: #99A3A3;
+
+}
+.footer__menu a:hover{
+    color: #99A3A3;
+
+}
 .top-menu{
     gap: 47px;
     margin-left: 27px;
@@ -293,6 +304,15 @@ header .container{
 .socials{
     gap: 20px;
 }
+.socials__item img:last-child{
+    display: none;
+}
+.socials__item:hover  img:last-child{
+    display: block;
+}
+.socials__item:hover  img:first-child{
+    display: none;
+}
 .cities{
     margin-left: 20px;
 }
@@ -315,6 +335,9 @@ header .container{
     height: 24px;
     background: url('../images/search.svg') no-repeat center;
     margin-right: 20px;
+}
+.search__open:hover{
+    background: url('../images/search-hover.svg') no-repeat center;
 }
 .section__title{
     font-weight: 400;
@@ -439,7 +462,6 @@ header .container{
 .about__right{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
 }
 .bestsellers{
     padding-top: 110px;
@@ -853,6 +875,13 @@ header .container{
     line-height: 1.25;
     margin-bottom: 10px;
     padding-left: 5px;
+}
+.delivery li a{
+    color: #99A3A3;
+    text-decoration: underline;
+}
+.delivery li span{
+    color: #99A3A3;
 }
 .delivery ol{
     padding-left: 25px;
@@ -1570,6 +1599,7 @@ header .container{
     top: 35px;
     right: 35px;
     filter: invert(1);
+    z-index: 9;
 }
 
 .contact__checkbox-label {
@@ -1707,6 +1737,9 @@ header .container{
     top: 5.5px;
     left: 8px;
 
+}
+.search__btn:hover{
+    background: url('../images/search-hover.svg') no-repeat;
 }
 .collection__img{
     border: 1px solid rgba(0, 0, 0, 1);
